@@ -15,8 +15,4 @@ if (isset($_POST['login'])) {
     }
 }
 ?>
-<form method="post">
-    <input name="username" required>
-    <input name="password" type="password" required>
-    <input type="submit" name="login" value="Login">
-</form>
+
