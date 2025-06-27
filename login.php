@@ -9,7 +9,7 @@ if (isset($_POST['login'])) {
     $row = $res->fetch_assoc();
 
     if ($row && password_verify($password, $row['password'])) {
-        echo "Login Successful (Secure)";
+        $_SESSION['username'] = $username;
         header("Location: dashboard.php");
         exit();
     } else {
