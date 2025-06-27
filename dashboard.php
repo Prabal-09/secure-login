@@ -41,7 +41,7 @@ if (!isset($_SESSION['username'])) {
 <body>
     <div class="card">
         <h2>Welcome, <?php echo $_SESSION['username']; ?>!</h2>
-        <p>You have successfully logged in using the <strong>Secure Login</strong> system.</p>
+        <p>You have successfully logged in using the <strong>Secure Login</strong> In this login System your password is stored using hashing method that is even we can't see your password  </p>
         <a href="logout.php">Logout</a>
     </div>
 </body>
