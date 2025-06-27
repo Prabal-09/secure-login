@@ -10,7 +10,7 @@ if (isset($_POST['login'])) {
 
     if ($row && password_verify($password, $row['password'])) {
         echo "Login Successful (Secure)";
-        header("Location: dashboard.html");
+        header("Location: dashboard.php");
         exit();
     } else {
         echo "Invalid Credentials";
